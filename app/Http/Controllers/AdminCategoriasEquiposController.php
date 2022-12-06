@@ -5,7 +5,7 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminClientesController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminCategoriasEquiposController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
@@ -25,40 +25,21 @@
 			$this->button_filter = true;
 			$this->button_import = true;
 			$this->button_export = true;
-			$this->table = "clientes";
+			$this->table = "categorias_equipos";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Nombre","name"=>"Nombre_Cliente"];
-			$this->col[] = ["label"=>"Apellido paterno","name"=>"Apellido1_Cliente"];
-			$this->col[] = ["label"=>"Apellido materno","name"=>"Apellido2_Cliente"];
-			$this->col[] = ["label"=>"Dirección","name"=>"Direccion_Cliente"];
-			$this->col[] = ["label"=>"Correo electrónico","name"=>"Correo_Cliente"];
-			$this->col[] = ["label"=>"Teléfono","name"=>"Telefono_Cliente"];
-			$this->col[] = ["label"=>"RUN","name"=>"Rut_Cliente"];
+			$this->col[] = ["label"=>"Categoria de equipo","name"=>"Cat_Equipo"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Nombre','name'=>'Nombre_Cliente','type'=>'text','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'Apellido Paterno','name'=>'Apellido1_Cliente','type'=>'text','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'Apellido Materno','name'=>'Apellido2_Cliente','type'=>'text','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'Dirección','name'=>'Direccion_Cliente','type'=>'text','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'Correo electrónico','name'=>'Correo_Cliente','type'=>'text','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'Teléfono','name'=>'Telefono_Cliente','type'=>'text','validation'=>'required','width'=>'col-sm-9'];
-			$this->form[] = ['label'=>'RUN','name'=>'Rut_Cliente','type'=>'text','width'=>'col-sm-9'];
+			$this->form[] = ['label'=>'Nombre categoría','name'=>'Cat_Equipo','validation'=>'required','width'=>'col-sm-9'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Nombre','name'=>'Nombre_Cliente','validation'=>'required','width'=>'col-sm-9'];
-			//$this->form[] = ['label'=>'Apellido Paterno','name'=>'Apellido1_Cliente','validation'=>'required','width'=>'col-sm-9'];
-			//$this->form[] = ['label'=>'Apellido Materno','name'=>'Apellido2_Cliente','validation'=>'required','width'=>'col-sm-9'];
-			//$this->form[] = ['label'=>'Dirección','name'=>'Direccion_Cliente','validation'=>'required','width'=>'col-sm-9'];
-			//$this->form[] = ['label'=>'Correo electrónico','name'=>'Correo_Cliente','validation'=>'required','width'=>'col-sm-9'];
-			//$this->form[] = ['label'=>'Teléfono','name'=>'Telefono_Cliente','validation'=>'required','width'=>'col-sm-9'];
-			//$this->form[] = ['label'=>'RUN','name'=>'Rut_Cliente','width'=>'col-sm-9'];
 			# OLD END FORM
 
 			/* 
